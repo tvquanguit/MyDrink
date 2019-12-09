@@ -1,0 +1,31 @@
+﻿.btnLogin {
+	background-color: #0d9f67;
+    font-size: medium;
+	color: white;
+	margin-top: 10;
+}
+.btnRegister {
+	background-color: white;
+    font-size: medium;
+	margin-bottom: 10;
+}
+.logoWelcome {
+	width: 200;
+	height: 200
+}
+.textLogoWelcome {
+	text-align: center;
+	color: white;
+	font-size: 25;
+	font-weight: bold;
+}
+.wrapLogonWelcome {
+	
+}
+.logoWelcome {
+	padding-top: 30;
+	background-color: yellow
+}
+.uploadImage {
+	border-radius: 50%;
+}

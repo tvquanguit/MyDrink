@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Cacco Cookie"
+             x:Class="MyDrink.Views.DetailDrink">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="coffee.png" WidthRequest="120" Margin="0,80,0,0" />
+                <Label Margin="20,30,0,0" Text="Mocca Cookie" FontSize="25" />
+                <Label Margin="20,0,0,0" Text="Locally Roasted" FontSize="17" />
+                <FlexLayout Margin="20,10,20,10" JustifyContent="SpaceBetween">
+                    <Label FontSize="18" Text="Base Price" />
+                    <Label FontSize="18" Text="$12.50" />
+                </FlexLayout>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#e2e2e2" Margin="30,0,30,0"/>
+                <FlexLayout Margin="20,10,20,10" JustifyContent="SpaceBetween">
+                    <Label FontSize="18" Text="Size" />
+                    <Picker Title="Choose size" ItemsSource="{Binding listSizeDrink}" ItemDisplayBinding="{Binding Value}" SelectedIndex="0" />
+                </FlexLayout>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="#e2e2e2" Margin="30,0,30,0"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

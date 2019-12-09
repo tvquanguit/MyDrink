@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Profile"
+             x:Class="MyDrink.Views.Profiles">
+    <ContentPage.Resources>
+        <Style x:Key="FAIconedLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="iconSetting" Icon="settings.png" Priority="0" Order="Primary"  Command="{Binding OpenOtherPageCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="30">
+                <Image 
+                    Source="uploadImage.png" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Center" 
+                    Margin="0,50,0,50"
+                    />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="INFO" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20"/>
+                    <Label Text="Name" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="Ngô Minh Nhí" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" />
+                    <Label Text="Location" Grid.Row="2" Grid.Column="0" />
+                    <Label Text="115 ĐaKao" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" />
+                    <Label Text="Email" Grid.Row="3" Grid.Column="0" />
+                    <Label Text="ngominhnhi1998@gmail.com" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End"/>
+                    <Label Text="Password" Grid.Row="4" Grid.Column="0" />
+                    <Label Text="*******" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

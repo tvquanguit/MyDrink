@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pages="clr-namespace:MyDrink.Views"
+             NavigationPage.HasNavigationBar="false"
+             Title="Home"
+             x:Class="MyDrink.Views.MainShell">
+    <Shell.Resources>
+        <StyleSheet Source="/Assets/Stylesheets/Login.css" />
+        <StyleSheet Source="/Assets/Stylesheets/Welcome.css" />
+    </Shell.Resources>
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <StackLayout StyleClass="wrapLogonLogin" BackgroundColor="#fff" >
+                <Label StyleClass="textLogoLogin"  Text="L I T T L E" />
+                <Label  StyleClass="textLogoLogin" Text="C O F F E E" />
+                <Label  StyleClass="textLogoLogin" Text="S H O P" />
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem Title="MyTabApp" 
+               Shell.TabBarIsVisible="False"
+               FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent  Title="Home" ContentTemplate="{DataTemplate pages:HomePage}"/>
+        <ShellContent Title="Menu" ContentTemplate="{DataTemplate pages:MenuPage}"/>
+        <ShellContent Title="Favorites" ContentTemplate="{DataTemplate pages:Favorites}"/>
+        <ShellContent  Title="Profile" ContentTemplate="{DataTemplate pages:Profiles}"/>
+        <ShellContent Title="Help" ContentTemplate="{DataTemplate pages:Help}"/>
+    </FlyoutItem>
+    <MenuItem Text="Logout"
+              IconImageSource="Done.png"
+              Command="{Binding LogoutCommand}" />
+    <MenuItem Text="CheckInfo"
+              IconImageSource="Done.png"
+              Command="{Binding CheckInfoCommand}" />
+</Shell>

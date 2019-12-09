@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/tranvanquang/Desktop/Xamarin/MyDrink/MyDrink/MyDrink/MyDrink.csproj": {}
+  },
+  "projects": {
+    "/Users/tranvanquang/Desktop/Xamarin/MyDrink/MyDrink/MyDrink/MyDrink.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tranvanquang/Desktop/Xamarin/MyDrink/MyDrink/MyDrink/MyDrink.csproj",
+        "projectName": "MyDrink",
+        "projectPath": "/Users/tranvanquang/Desktop/Xamarin/MyDrink/MyDrink/MyDrink/MyDrink.csproj",
+        "packagesPath": "/Users/tranvanquang/.nuget/packages/",
+        "outputPath": "/Users/tranvanquang/Desktop/Xamarin/MyDrink/MyDrink/MyDrink/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tranvanquang/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Plugin.FacebookClient": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.2.0.709249, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

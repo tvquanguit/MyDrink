@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             Title="Edit Profile"
+             x:Class="MyDrink.Views.EditProfile">
+    <!--<NavigationPage.TitleView>
+        <Label Text="Edit Profile" HorizontalTextAlignment="Center"/>
+    </NavigationPage.TitleView>-->
+    <ContentPage.Resources>
+        <Style x:Key="styleLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="iconSetting" Icon="done.png" Priority="0" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="30">
+                <Image 
+                    Source="uploadImage.png" 
+                    WidthRequest="150" 
+                    HorizontalOptions="Center" 
+                    Margin="0,50,0,50"
+                    />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="INFO" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20"/>
+                    <Label Text="Name" Grid.Row="1" Grid.Column="0" Style="{StaticResource styleLabel}"/>
+                    <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" Text="Ngô Minh Nhí" />
+                    <Label Text="Location" Grid.Row="2" Grid.Column="0" Style="{StaticResource styleLabel}" />
+                    <Entry Text="115 ĐaKao" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" />
+                    <Label Text="Email" Grid.Row="3" Grid.Column="0" Style="{StaticResource styleLabel}" />
+                    <Entry Text="ngominhnhi1998@gmail.com" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End"/>
+                    <Label Text="Current Password" Grid.Row="4" Grid.Column="0" Style="{StaticResource styleLabel}" />
+                    <Entry Text="ngominhnhi" IsPassword="True" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" />
+                    <Label Text="New Password" Grid.Row="5" Grid.Column="0" Style="{StaticResource styleLabel}" />
+                    <Entry Text="" IsPassword="True" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="End" />
+                    <Label Text="Confirm Password" Grid.Row="6" Grid.Column="0" Style="{StaticResource styleLabel}"/>
+                    <Entry Text="" IsPassword="True" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="End" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:MyDrink"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="MyDrink.Views.Login">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/Stylesheets/Login.css" />
+        <StyleSheet Source="/Assets/Stylesheets/Welcome.css" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout  Grid.Row="0" StyleClass="logoLogin" Margin="0, 150, 0, 0" Grid.ColumnSpan="2">
+                <StackLayout StyleClass="wrapLogonLogin" >
+                    <Label StyleClass="textLogoLogin"  Text="L I T T L E" />
+                    <Label  StyleClass="textLogoLogin" Text="C O F F E E" />
+                    <Label  StyleClass="textLogoLogin" Text="S H O P" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Padding="0, 0, 0, 100" Grid.ColumnSpan="2" >
+                <local:RoundedEntry Text="{Binding UserName}" Placeholder="Username"  Margin="40, 0, 40, 0" ></local:RoundedEntry>
+                <local:RoundedEntry Text="{Binding Password}"  IsPassword="true" Placeholder="Password" Margin="40, 5, 40, 5"></local:RoundedEntry>
+                <Button StyleClass="btnLogin" Command="{Binding LoginCommand}"  Text="Login"  Margin="40, 0, 40, 0"/>
+            </StackLayout>
+            <Label Text="Sign in with " HorizontalOptions="Center" Grid.Row="2" Grid.ColumnSpan="2" />
+            <Button Text="Facebook" BackgroundColor="#3b5998" Margin="40, 0, 0, 0" Grid.Row="3" Grid.Column="0" TextColor="White" />
+            <Button Text="Email" BackgroundColor="#55acee" Margin="0,0, 40, 0" Grid.Row="3" Grid.Column="1" TextColor="White"/>
+
+            <StackLayout Padding="20" Grid.Row="3"
+                         VerticalOptions="CenterAndExpand" 
+                         x:Name="mainLayout"
+                         BindableLayout.ItemsSource="{Binding AuthenticationNetworks}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                         <Button Text="{Binding Name, StringFormat='Login with {0}'}"
+                            ImageSource="{Binding Icon}"
+                            Command="{Binding Path=BindingContext.OnLoginCommand, Source={x:Reference mainLayout}}"
+                            CommandParameter="{Binding .}"     
+                            HeightRequest="45"
+                            TextColor="{Binding Foreground}"
+                            BackgroundColor="{Binding Background}"
+                            WidthRequest="280"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="FillAndExpand"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+
+        </Grid>-->
+
+
+                    <StackLayout Padding="20"
+                         VerticalOptions="CenterAndExpand">
+                
+                <Button Text="Login with Facebook"
+                        ImageSource="ic_fb"
+                        Command="{Binding OnLoginCommand}"
+                        HeightRequest="45"
+                        TextColor="White"
+                        BackgroundColor="#4768AD"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿
+.logoLogin {
+	border-width: 1;
+	border-style: solid;
+	border-color: grey;
+	width: 200;
+	height: 200
+}
+.textLogoLogin {
+	text-align: center;
+	color: #9b9a9a;
+	font-size: 25;
+	font-weight: bold;
+}
